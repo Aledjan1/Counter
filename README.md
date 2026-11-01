@@ -52,7 +52,7 @@ Counter/
 
 ## Live Demo
 
-Add your GitHub Pages URL here.
+https://aledjan1.github.io/Counter/
 
 ## Source Code
 
