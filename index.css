@@ -1,0 +1,103 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef2f8;
+}
+
+.counter {
+    width: 100%;
+    max-width: 380px;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.counter__title {
+    margin: 0 0 25px;
+    font-size: 28px;
+    color: #25304b;
+}
+
+.counter__value {
+    margin-bottom: 30px;
+    font-size: 72px;
+    font-weight: 700;
+    color: #25304b;
+}
+
+.counter__buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 14px 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.btn--decrease {
+    flex: 1;
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.btn--decrease:hover {
+    background: #fecaca;
+}
+
+.btn--increase {
+    flex: 1;
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.btn--increase:hover {
+    background: #bbf7d0;
+}
+
+.btn--reset {
+    width: 100%;
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.btn--reset:hover {
+    background: #cbd5e1;
+}
+
+@media (max-width: 400px) {
+    .counter {
+        padding: 25px 20px;
+    }
+
+    .counter__value {
+        font-size: 60px;
+    }
+
+    .btn {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+}
